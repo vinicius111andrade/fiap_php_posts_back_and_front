@@ -7,6 +7,17 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do site para criar a ilusão de uma borda externa */
 }
 
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.post-date {
+  float: right;
+  font-size: 14px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -60,9 +71,9 @@ body {
 }
 
 .posts {
-  flex: 3;
   display: flex;
   flex-direction: column;
+  flex: 3;
 }
 
 .post {
@@ -97,6 +108,15 @@ body {
   font-weight: bold;
   background-color: transparent; /* Retirado a cor de fundo */
   float: right;
+}
+
+.get-back {
+float: right;
+background-color: transparent; /* Retirado a cor de fundo */
+border: none;
+font-weight: bold;
+font-size: 18px;
+padding: 20px; /* Espaçamento ao redor de todo o site */
 }
 
 .advertisement {
