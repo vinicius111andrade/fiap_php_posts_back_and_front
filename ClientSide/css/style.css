@@ -101,6 +101,12 @@ body {
   font-weight: bold;
 }
 
+.post-hipertitle  {
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 20px; /* Espaçamento entre os elementos */
+}
+
 
 .read-more {
   border: none;
