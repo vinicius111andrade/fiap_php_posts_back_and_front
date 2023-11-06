@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/style.css">
+<title>Admin/Listar</title>
+</head>
+
+<body>
+  <div class="post-date">          
+  <!--
+    <?php echo date('d de M de Y - H:i'); ?>
+  -->
+  07 de setembro de 2018 - 18:30</div>
+  <div class="header">
+    <div class="logo">LOGOTIPO</div>
+    <nav class="nav">
+      <a href="#categoria1">CATEGORIA 1</a> |
+      <a href="#categoria2">CATEGORIA 2</a> |
+      <a href="#categoria3">CATEGORIA 3</a> |
+      <a href="#categoria4">CATEGORIA 4</a>
+    </nav>
+  </div>
+
+  
+  <!-- Posts Section -->
+  <div class="clearfix">
+  <div class="content">
+    <aside class="sidebar">
+      <ul>
+          <li>MEU BLOG</li>
+          <li>Listar Posts</li>
+          <li>Inserir novo Post</li>
+      </ul>
+  </aside>
+  <table>
+    <thead>
+        <tr>
+            <th>Código</th>
+            <th>Título do Post</th>
+            <th>Categoria</th>
+            <th colspan="2">Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php
+        // Aqui você faria o loop pelos posts, por exemplo:
+        // foreach ($posts as $post) {
+        //     echo "<tr>";
+        //     echo "<td>{$post['codigo']}</td>";
+        //     echo "<td>{$post['titulo']}</td>";
+        //     echo "<td>{$post['categoria']}</td>";
+        //     echo "<td><button class='btn-edit'>alterar</button></td>";
+        //     echo "<td><button class='btn-delete'>excluir</button></td>";
+        //     echo "</tr>";
+        // }
+        ?>
+      
+    </tbody>
+</table>
+    
+
+  </div>
+</div>
+  <!-- Footer -->
+  <footer>
+    Endereço da Empresa: Rua Tal, sem número
+  </footer>
+</body>
+</html>

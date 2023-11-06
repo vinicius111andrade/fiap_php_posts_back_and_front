@@ -127,7 +127,6 @@ padding: 20px; /* Espaçamento ao redor de todo o site */
 
 .advertisement {
   width: 15%;
-
   flex: 1;
   text-align: center;
   border: 1px solid gray;
@@ -136,6 +135,64 @@ padding: 20px; /* Espaçamento ao redor de todo o site */
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+
+
+.sidebar {
+  padding: 20px;
+  width: 200px;
+  background-color: #f4f4f4;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #ddd;
+  cursor: pointer;
+}
+
+main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table, th, td {
+  border: 1px solid #000;
+}
+
+th, td {
+  padding: 10px;
+  text-align: left;
+}
+
+.btn-edit, .btn-delete {
+  cursor: pointer;
+}
+
+/* Estilos para botões */
+.btn-edit {
+  background-color: #f0ad4e; /* Bootstrap's btn-warning color */
+  color: white;
+  padding: 5px 10px;
+  border: none;
+}
+
+.btn-delete {
+  background-color: #d9534f; /* Bootstrap's btn-danger color */
+  color: white;
+  padding: 5px 10px;
+  border: none;
 }
 
 footer {
