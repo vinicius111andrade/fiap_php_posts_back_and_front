@@ -138,7 +138,6 @@ padding: 20px; /* Espaçamento ao redor de todo o site */
 }
 
 
-
 .sidebar {
   padding: 20px;
   width: 200px;
@@ -199,9 +198,7 @@ footer {
   text-align: center;
   padding: 10px;
   font-weight: bold;
-
 }
-
 
 /* Estilos do formulário */
 #alter-post-form label {

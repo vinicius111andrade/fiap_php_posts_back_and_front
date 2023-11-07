@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../css/style.css">
+<title>Admin/Inserir</title>
+</head>
+
+<body>
+  <div class="post-date">          
+    <!-- PHP para mostrar data e hora atual, descomente para usar -->
+    <!-- <?php echo date('d de M de Y - H:i'); ?> -->
+    07 de setembro de 2018 - 18:30
+  </div>
+
+  <div class="header">
+    <div class="logo">LOGOTIPO</div>
+    <nav class="nav">
+      <!-- Links do menu principal, você pode adicionar os caminhos correspondentes -->
+      <a href="#categoria1">CATEGORIA 1</a> |
+      <a href="#categoria2">CATEGORIA 2</a> |
+      <a href="#categoria3">CATEGORIA 3</a> |
+      <a href="#categoria4">CATEGORIA 4</a>
+    </nav>
+  </div>
+
+  <!-- Sidebar e Conteúdo Principal -->
+
+    <aside class="sidebar">
+      <!-- Menu lateral -->
+      <ul>
+        <li>MEU BLOG</li>
+        <li>Listar Posts</li>
+        <li>Inserir novo Post</li>
+      </ul>
+    </aside>
+
+    <!-- Formulário para Alteração de Post -->
+    <div class="clearfix">
+    <div class="content">
+      <form id="alter-post-form">
+        <label for="post-title">Título no post:</label>
+        <input type="text" id="post-title" name="post-title">
+
+        <label for="post-category">Categoria do Post:</label>
+        <select id="post-category" name="post-category">
+          <!-- Adicione as opções de categorias aqui -->
+          <option value="categoria1">Categoria 1</option>
+        </select>
+
+        <label for="post-date">Data da Publicação:</label>
+        <input type="date" id="post-date" name="post-date">
+
+        <label for="post-content">Conteúdo:</label>
+        <textarea id="post-content" name="post-content"></textarea>
+
+        <label for="post-image">Imagem:</label>
+        <input type="file" id="post-image" name="post-image">
+
+        <button type="submit">INSERIR POST</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    Endereço da Empresa: Rua Tal, sem número
+  </footer>
+</body>
+</html>
