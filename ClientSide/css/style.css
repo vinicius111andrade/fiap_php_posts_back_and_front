@@ -76,9 +76,6 @@ body {
   font-size: 1.1em;
 }
 
-
-
-
 .breadcrumb {
 
   padding-bottom: 40px;
@@ -90,6 +87,7 @@ body {
   margin-left: 400px;
   margin-right: 400px;
 }
+
 .content {
   display: flex;
   margin-bottom: 8px;
@@ -110,7 +108,7 @@ body {
 .post-image {
   width: 15%;
   border: 1px solid gray;
-  padding: 50px;
+  padding: 10px;
   text-align: center;
   display: flex;
   justify-content: center;
