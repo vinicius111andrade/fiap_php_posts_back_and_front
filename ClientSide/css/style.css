@@ -201,3 +201,45 @@ footer {
   font-weight: bold;
 
 }
+
+
+/* Estilos do formulário */
+#alter-post-form label {
+  display: flex;
+  margin: 10px 0 5px;
+}
+
+#alter-post-form input,
+#alter-post-form select,
+#alter-post-form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  /* Mais estilos para os campos do formulário */
+}
+
+#alter-post-form button {
+  padding: 10px 15px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  cursor: pointer;
+  /* Mais estilos para o botão */
+}
+
+#alter-post-form button:hover {
+  background-color: #005f73;
+}
+
+/* Estilo do rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f2f2f2;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  /* Estilos para dispositivos móveis */
+}
