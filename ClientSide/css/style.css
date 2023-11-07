@@ -1,10 +1,13 @@
+/* Importando a fonte 'Quicksand' do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+
 body {
   font-family: Arial, sans-serif;
   margin: 10px;
   padding: 8px; /* Espaçamento ao redor de todo o site */
-  border: 1px solid black; /* Borda ao redor de todo o site */
-  background: white; /* Para garantir que o fundo seja branco */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra ao redor do site para criar a ilusão de uma borda externa */
+  font-family: 'Quicksand', sans-serif;
+  background-color: #f8fdfe;
 }
 
 .clearfix::after {
@@ -27,7 +30,6 @@ body {
 }
 
 .logo {
-  border: 1px solid gray;
   padding: 15px;
   text-align: center;
   text-transform: uppercase;
@@ -48,23 +50,46 @@ body {
 
 .search-input {
   flex: 1; 
+  border-radius: 5px;
   border: 1px solid #ccc;
   padding: 5px;
   margin-right: 8px; /* Espaçamento entre a caixa de busca e o botão */
 }
 
 .search-button {
-  background-color: #ccc;
+  background-color: #ebacc3;
+  border: 1px solid #f1c8d7;
+  color: #ffffff;
+  border-radius: 5px;
   border: none;
   padding: 10px 15px;
   font-size: 1.1em;
 }
 
+.search-button:hover{
+  background-color: #B1B0D9;
+  border: 1px solid #9e9ddf;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 15px;
+  font-size: 1.1em;
+}
+
+
+
+
 .breadcrumb {
+
+  padding-bottom: 40px;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
+.content_wight{
+  margin-left: 400px;
+  margin-right: 400px;
+}
 .content {
   display: flex;
   margin-bottom: 8px;
@@ -121,16 +146,32 @@ float: right;
 background-color: transparent; /* Retirado a cor de fundo */
 border: none;
 font-weight: bold;
-font-size: 18px;
+font-size: 12px;
 padding: 20px; /* Espaçamento ao redor de todo o site */
+background-color: #ebacc3;
+border: 1px solid #f1c8d7;
+color: #ffffff;
+border-radius: 5px;
+border: none;
+padding: 10px 15px;
 }
+
+
+.get-back:hover {
+  background-color: #B1B0D9;
+  border: 1px solid #9e9ddf;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 15px;
+}
+
 
 .advertisement {
   width: 15%;
   flex: 1;
   text-align: center;
-  border: 1px solid gray;
-  margin-left: 10px;
+  margin-left: 200px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -139,21 +180,49 @@ padding: 20px; /* Espaçamento ao redor de todo o site */
 
 
 .sidebar {
-  padding: 20px;
-  width: 200px;
-  background-color: #f4f4f4;
-}
-
-.sidebar ul {
-  list-style: none;
-  padding: 0;
+  width: 300px;
 }
 
 .sidebar ul li {
   padding: 10px;
-  margin-bottom: 5px;
-  background-color: #ddd;
+  margin-bottom: 0; /* Define a margem inferior como 0 */
+  background-color: #f8fdfe;
+  border: 1px solid gray;
   cursor: pointer;
+  list-style: none;
+}
+
+/* Adicione esta regra para remover o espaço entre os itens da lista e a borda do 'ul' */
+.sidebar ul {
+  margin: 0; /* Remove a margem padrão */
+  padding: 0; /* Remove o padding padrão */
+}
+
+.sidebar ul li.active {
+  background-color: rgb(223, 223, 223); /* ou qualquer outra cor que deseja usar */
+  border-radius: 5px;
+  border: 1px solid transparent;
+    width: 310px;
+  
+  /* Adicione outros estilos se necessário */
+}
+
+.sidebar ul li.title {
+  background-color: #e6aac0; /* ou qualquer outra cor que deseja usar */
+  color:white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 25px;
+  
+  
+  /* Adicione outros estilos se necessário */
+}
+
+h2.form-title{
+  Color: #B1B0D9;
+  font-size: 30px;
+  margin-left: 100px;
+  width: 100%;
 }
 
 main {
@@ -162,6 +231,8 @@ main {
 }
 
 table {
+  margin-left: 100px;
+  margin-right: 100px;
   width: 100%;
   border-collapse: collapse;
 }
@@ -173,6 +244,10 @@ table, th, td {
 th, td {
   padding: 10px;
   text-align: left;
+  background-color: #e6baca; /* ou qualquer outra cor que deseja usar */
+  color:white;
+  border: 1px solid gray
+
 }
 
 .btn-edit, .btn-delete {
@@ -194,10 +269,59 @@ th, td {
   border: none;
 }
 
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+/* Wrapper para o conteúdo da página */
+.content-wrapper {
+  min-height: 100%; /* Altura mínima de 100% do viewport */
+  margin-bottom: -20px; /* Negativo do mesmo valor da altura do footer */
+  padding-bottom: 20px; /* Deve ser o mesmo valor da altura do footer */
+}
+
+/* Espaço reservado para o footer */
+.footer, .content-wrapper, .content-form::after {
+  height: 50px; /* Altura do footer */
+  clear: both;
+}
+
 footer {
   text-align: center;
-  padding: 10px;
-  font-weight: bold;
+  font-size: 12px;
+  background: linear-gradient(to right, #E8FDFA, #F2DCE4);
+  position: relative; /* Posicionamento relativo */
+  width: 100%; /* Largura total */
+}
+
+/* Certifique-se de que o conteúdo não fique escondido pelo footer */
+body > .content-wrapper, .content-form {
+  overflow: hidden;
+}
+
+form {
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 100%;
+
+}
+
+.content-form {
+  display: flex; /* Usa flexbox para dispor os elementos */
+  min-height: 100%; /* Altura mínima de 100% do viewport */
+  margin-bottom: -20px; /* Negativo do mesmo valor da altura do footer */
+}
+
+
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
 }
 
 /* Estilos do formulário */
@@ -217,26 +341,23 @@ footer {
 }
 
 #alter-post-form button {
-  padding: 10px 15px;
-  background-color: #008CBA;
-  color: white;
+  background-color: #ebacc3;
+  border: 1px solid #f1c8d7;
+  color: #ffffff;
+  border-radius: 5px;
   border: none;
-  cursor: pointer;
-  /* Mais estilos para o botão */
+  padding: 10px 15px;
+  font-size: 15px;
 }
 
 #alter-post-form button:hover {
-  background-color: #005f73;
+  background-color: #B1B0D9;
+  border: 1px solid #9e9ddf;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding: 10px 15px;
 }
 
-/* Estilo do rodapé */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #f2f2f2;
-}
 
-/* Responsividade */
-@media (max-width: 768px) {
-  /* Estilos para dispositivos móveis */
-}
+
