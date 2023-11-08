@@ -76,6 +76,27 @@ body {
   font-size: 1.1em;
 }
 
+
+.feedback-button {
+  background-color: #ebacc3;
+  border: 1px solid #f1c8d7;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+  padding: 20px 15px;
+  font-size: 15px;
+  align-items: center;
+}
+
+.feedback-button:hover{
+  background-color: #B1B0D9;
+  border: 1px solid #9e9ddf;
+  color: #ffffff;
+  border-radius: 5px;
+  border: none;
+
+}
+
 .breadcrumb {
 
   padding-bottom: 40px;
